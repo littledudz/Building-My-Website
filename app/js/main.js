@@ -1,6 +1,6 @@
-angular.module('webApp', ['ngRoute','ngResource']);
+var app = angular.module('webApp', ['ngRoute','ngResource']);
 
-config (['$routeProvider', function ($routeProvider) {
+app.config (['$routeProvider', function ($routeProvider) {
     $routeProvider
     .when('/', {
         templatUrl: 'views/home.html',
