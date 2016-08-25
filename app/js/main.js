@@ -1,17 +1,17 @@
-var app = angular.module('webApp', ['ngRoute','ngResource']);
+var app = angular.module('WebApp', ['ngRoute','ngResource']);
 
 app.config (['$routeProvider', function ($routeProvider) {
     $routeProvider
     .when('/', {
-        templatUrl: 'views/home.html',
+        templateUrl: 'views/home.html',
         controller: 'HomeViewController'
     })
     .when('/about', {
-        templatUrl: 'views/about.html',
+        templateUrl: 'views/about.html',
         controller: 'AboutViewController'
     })
     .when('/projects', {
-        templatUrl: 'views/projects.html',
+        templateUrl: 'views/projects.html',
         controller: 'ProjectsViewController'
     })
     .otherwise ({

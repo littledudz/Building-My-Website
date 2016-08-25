@@ -1,13 +1,13 @@
-angular.module("webApp")
+angular.module("WebApp")
 
-.controller('NavbarController', ['$scope', '$location', function ($scope, $location) {
-    $scope.goToHomeView = () => { $location.path('/') };
-    $scope.goToAboutView = () => { $location.path('/about') };
-    $scope.goToProjectsView = () => { $location.path('/projects') };
-    $scope.isActive = function (destination) {
-        return destination === $location.path()
-    }
-}])
+// .controller('NavbarController', ['$scope', '$location', function ($scope, $location) {
+//     $scope.goToHomeView = () => { $location.path('/') };
+//     $scope.goToAboutView = () => { $location.path('/about') };
+//     $scope.goToProjectsView = () => { $location.path('/projects') };
+//     $scope.isActive = function (destination) {
+//         return destination === $location.path()
+//     }
+// }])
 
 .controller('HomeViewController', ['$scope' ,'$location', function ($scope, $location) {
     $scope.goToAboutView = () => { $location.path('/about') };
@@ -25,4 +25,4 @@ angular.module("webApp")
 
 .controller('FooterController', ['$scope', function ($scope) {
     
-}])
+}]);
