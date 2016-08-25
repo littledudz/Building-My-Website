@@ -6,13 +6,25 @@ app.config (['$routeProvider', function ($routeProvider) {
         templateUrl: 'views/home.html',
         controller: 'HomeViewController'
     })
-    .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutViewController'
+    .when('/profile', {
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileViewController'
+    })
+    .when('/resume', {
+        templateUrl: 'views/resume.html',
+        controller: 'ResumeViewController'
     })
     .when('/projects', {
         templateUrl: 'views/projects.html',
         controller: 'ProjectsViewController'
+    })
+    .when('/blog', {
+        templateUrl: 'views/blog.html',
+        controller: 'BlogViewController'
+    })
+    .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactViewController'
     })
     .otherwise ({
         redirectTo: '/'

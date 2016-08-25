@@ -1,25 +1,38 @@
 angular.module("WebApp")
 
-// .controller('NavbarController', ['$scope', '$location', function ($scope, $location) {
-//     $scope.goToHomeView = () => { $location.path('/') };
-//     $scope.goToAboutView = () => { $location.path('/about') };
-//     $scope.goToProjectsView = () => { $location.path('/projects') };
-//     $scope.isActive = function (destination) {
-//         return destination === $location.path()
-//     }
-// }])
-
-.controller('HomeViewController', ['$scope' ,'$location', function ($scope, $location) {
-    $scope.goToAboutView = () => { $location.path('/about') };
+.controller('NavbarController', ['$scope', '$location', function ($scope, $location) {
+    $scope.goToHomeView = () => { $location.path('/') };
+    $scope.goToAboutView = () => { $location.path('/profile') };
+    $scope.goToAboutView = () => { $location.path('/resume') };
     $scope.goToProjectsView = () => { $location.path('/projects') };
-    $scope.title= "Hello World";
+    $scope.goToAboutView = () => { $location.path('/blog') };
+    $scope.goToAboutView = () => { $location.path('/contact') };
+    // $scope.isActive = function (destination) {
+    //     return destination === $location.path()
+    // }
 }])
 
-.controller('AboutViewController', ['$scope', function ($scope) {
+.controller('HomeViewController', ['$scope' ,'$location', function ($scope, $location) {
+
+}])
+
+.controller('ProfileViewController', ['$scope', function ($scope) {
+    
+}])
+
+.controller('ResumeViewController', ['$scope', function ($scope) {
     
 }])
 
 .controller('ProjectsViewController', ['$scope', function ($scope) {
+    
+}])
+
+.controller('BlogViewController', ['$scope', function ($scope) {
+    
+}])
+
+.controller('ContactViewController', ['$scope', function ($scope) {
     
 }])
 
