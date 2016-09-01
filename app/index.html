@@ -6,6 +6,7 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles/animations.css">
         <link rel="stylesheet" href="styles/navbar.css">
@@ -17,6 +18,32 @@
         <link rel="stylesheet" href="styles/contact.css">
         <link rel="stylesheet" href="styles/footer.css">
 
+    </head>
+    <body>
+        <div class="container">
+            <nav ng-controller="NavbarController" class="navbar">
+                <i class="fa fa-bars" class="hamburger"></i>
+            </nav>
+            <div class="page-container">
+                <div ng-view></div>
+            </div>
+            <div class="footer-container">
+                <footer class="">
+                    <div class="container">
+                        <li> Developed and Designed by Dudley Dickerson </li>
+                        <div class="footer-social">
+                            <ul class="social-list">
+                                <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                <li><a href="#"><i class="ti-vimeo-alt"></i></a></li>
+                                <li><a href="#"><i class="ti-dribbble"></i></a></li>
+                            </ul>
+                        </div><!-- /.footer-social -->
+                    </div><!-- /.container -->
+                </footer>
+            </div>
+        </div>
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-animate/angular-animate.js"></script>
@@ -25,22 +52,5 @@
         <script src="js/main.js"></script>
         <script src="js/factories.js"></script>
         <script src="js/controllers.js"></script>
-        <!--<link rel="stylesheet/less" type="text/css" href="styles.less" />
-        <script src="less.js" type="text/javascript"></script>-->
-        <title>Welcome!</title>
-    </head>
-    <body>
-        <div class="container">
-            <!--<nav ng-controller="NavbarController">
-                <ul class="navbar make-active">
-                    <li class="links" ng-class="{active: isActive('/about')}"><a href="/about">About Me</a></li>
-                    <li class="links" ng-class="{active: isActive('/projects')}"><a href="/about">Projects</a></li>
-                </ul>
-            </nav>-->
-            <h1>Navbar</h1>
-            <div ng-view></div>
-            <h1>Footer</h1>
-            <!--<nav ng-controller="FooterController"></nav>-->
-        </div>
     </body>
 </html>

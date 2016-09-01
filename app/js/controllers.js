@@ -13,7 +13,13 @@ angular.module("WebApp")
 }])
 
 .controller('HomeViewController', ['$scope' ,'$location', function ($scope, $location) {
-
+    $scope.interval = 3000;
+    $scope.photos = [
+        { image1: 'http://lorempixel.com/400/200/' },
+        { image2: 'http://lorempixel.com/400/200/food' },
+        { image3: 'http://lorempixel.com/400/200/sports' },
+        { image4: 'http://lorempixel.com/400/200/people' }
+    ];
 }])
 
 .controller('ProfileViewController', ['$scope', function ($scope) {
