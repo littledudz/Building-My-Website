@@ -1,33 +1,37 @@
-#home.angles-wrapper_page-1 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
-}
 footer {
-  background: #e8eaf6;
-  color: #a6a6a6;
-  clear: both;
+  height: 3em;
+  z-index: 100;
+  background: #ffffff;
+  color: #37474f;
   font-family: 'Oswald';
-  font-size: 15px;
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 1.25em;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
   position: fixed;
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 33px 0 28px;
-  letter-spacing: .65px;
-  text-transform: uppercase;
-  z-index: 99;
-  height: 6em;
+  right: 0;
+}
+footer p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 1em;
+  padding-left: 7em;
 }
 footer a {
-  color: #a6a6a6;
-}
-.footer-social a {
+  color: #37474f;
+  cursor: pointer;
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  text-decoration: none;
+  padding: 0em .25em;
+}
+footer .footer-social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 1em;
+  padding-right: 17em;
 }
