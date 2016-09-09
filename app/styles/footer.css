@@ -1,6 +1,6 @@
 footer {
   height: 3em;
-  z-index: 100;
+  z-index: 99;
   background: #ffffff;
   color: #37474f;
   font-family: 'Oswald';

@@ -1,23 +1,61 @@
 .navbar {
-    z-index: 9999;
+    z-index: 99;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 5em;
+    float: left;
 }
-.navbar .links-container {
-    color: black;
-    text-decoration: none;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1em;
+
+/* ------------ Navbar Hamburger ------------- */
+
+#hamburger {
+    z-index: 60;
+    position: relative;
+    color: #37474f;
+    cursor: pointer;
+    margin-top: 14em;
+    margin-left: 1.05em;
 }
-.hamburger {
-    color: black;
-    position: absolute;
-    top: 0;
-    right: 0;
+.hamburger-circle {
+    cursor: pointer;
+    margin-left: 1em;
+    margin-top: -3em;
+}
+.hamburger-circle:hover {
+  -webkit-box-shadow: 0px 0px 6px #000000;
+}
+.top-circles {
+    z-index: 50;
+    position: relative;
+    width: 4em;
+    height: 4em;
+    border: 3px solid #f1c311;
+    background-color: white;
+    border-radius: 4em;
+}
+
+/* ------------ Modal ------------- */
+
+.modal-container {
+    z-index: 100;
+    position: fixed;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+    top: 0em;
+}
+.modal-container .modal{
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 3px 3px 3px 3px;
+    padding: 20px;
+    margin-left: -200px;
 }

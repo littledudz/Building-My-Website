@@ -1,12 +1,27 @@
 angular.module("WebApp")
 
-.controller('NavbarController', ['$scope', '$location', function ($scope, $location) {
+.controller('NavbarController', ['$scope', '$location', 'modals', function ($scope, $location, modals) {
     $scope.goToHomeView = () => { $location.path('/') };
     $scope.goToAboutView = () => { $location.path('/profile') };
-    $scope.goToAboutView = () => { $location.path('/resume') };
+    $scope.goToResumeView = () => { $location.path('/resume') };
     $scope.goToProjectsView = () => { $location.path('/projects') };
-    $scope.goToAboutView = () => { $location.path('/blog') };
-    $scope.goToAboutView = () => { $location.path('/contact') };
+    $scope.goToBlogView = () => { $location.path('/blog') };
+    $scope.openModal = function () {
+        var promise = modals.open(
+            "openModal", {
+                message: "Hello World!"
+            }
+        )
+        promise.then(
+            function resolve (response) {
+                console.log ("Button prerssed")
+            }, function reject () {
+                console.warn("Modal rejected")
+            }
+        )
+    }
+    $scope.message = ( modals.params().message || "Whoa!" );
+    $scope.close = modals.resolve;
     // $scope.isActive = function (destination) {
     //     return destination === $location.path()
     // }

@@ -1,6 +1,77 @@
+/* ------------ Top Circle ------------- */
+
+.top-circle-container{
+  z-index: 99;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'Oswald';
+  margin-bottom: -1em;
+}
+.top-circle-container .top-circle {
+  z-index: 75;
+  position: relative;
+  display: inline-block;
+  width: 23em;
+  height: 23em;
+  border: 3px solid #f1c311;
+  background-color: #ffffff;
+  border-radius: 13em;
+  margin-top: 3em;
+  margin-left: 3em;
+}
+.top-circle-content {
+  z-index: 85;
+  position: relative;
+  text-align: center;
+  letter-spacing: 0em;
+  margin-top: -14em;
+  margin-left: 3em;
+
+}
+.top-circle-content .circle-content-name {
+  font-size: 2.75em;
+}
+.top-circle-content .circle-content-title {
+  font-size: 2em;
+}
+.top-extra-cicles {
+  display: inline-block;
+  border-radius: 10em;
+  border: 3px solid #f1c311;
+}
+#top-circle1 {
+  margin-top: 0em;
+  margin-left: 0em;
+}
+#top-circle2 {
+  margin-top: 0em;
+  margin-left: 0em;
+}
+#top-circle3 {
+  margin-top: 0em;
+  margin-left: 0em;
+}
+#top-circle4 {
+  margin-top: 0em;
+  margin-left: 0em;
+}
+#top-circle5 {
+  margin-top: 0em;
+  margin-left: 0em;
+}
+#top-circle6 {
+  margin-top: 0em;
+  margin-left: 0em;
+}
+
 /* ------------ Carousel ------------- */
 
 .carousel-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   padding: 0em;
@@ -79,7 +150,7 @@
   background-color: #f1c311
 }
 .bottom-squares-container {
-  margin-top: -11em;
+  margin-top: 39em;
   margin-right: 9em;
 }
 .bottom-squares-container .qc{
@@ -99,6 +170,7 @@
   display: inline-block;
   float: right;
   border-radius: 10em;
+  border: 3px solid #f1c311;
 }
 .large-circles {
   width: 5em;
