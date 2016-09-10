@@ -15,7 +15,7 @@
     position: relative;
     color: #37474f;
     cursor: pointer;
-    margin-top: 14em;
+    margin-top: 13em;
     margin-left: 1.05em;
 }
 .hamburger-circle {
@@ -49,13 +49,13 @@
     top: 0em;
 }
 .modal-container .modal{
+    z-index: 100;
     position: fixed;
-    top: 200px;
-    left: 50%;
-    width: 400px;
-    height: 400px;
+    display: block;
+    width: 95%;
+    height: 88%;
     background-color: #ffffff;
-    border-radius: 3px 3px 3px 3px;
+    border-radius: 6px;
     padding: 20px;
-    margin-left: -200px;
+    margin: 2.5%
 }
