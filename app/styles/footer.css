@@ -1,6 +1,11 @@
 footer {
-  height: 3em;
   z-index: 99;
+  height: 3em;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: #ffffff;
   color: #37474f;
   font-family: 'Oswald';
@@ -9,18 +14,13 @@ footer {
   letter-spacing: 0.05em;
   text-decoration: none;
   text-transform: uppercase;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 footer p {
   position: absolute;
   top: 0;
   left: 0;
   padding-top: 1em;
-  padding-left: 7em;
+  padding-left: 7%;
 }
 footer a {
   color: #37474f;
@@ -33,5 +33,5 @@ footer .footer-social {
   top: 0;
   right: 0;
   padding-top: 1em;
-  padding-right: 17em;
+  padding-right: 7%;
 }

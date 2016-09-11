@@ -25,14 +25,18 @@
                 <div bn-modals ng-show="subview" ng-switch="subview" class="modal-container">
                     <div ng-switch-when="openModal" class="modal">
                         <p>{{ message }}</p>
-                        <!--<ul>
-                            <li class="" ng-click="goToHomeView()">Home</li>
-                            <li class="" ng-click="goToAboutView()">About</li>
+                        <ul class="modal-panel-container">
+                            <li class="modal-panel" id="panel1" ng-click="goToAboutView()">
+                                <div class="modal-panel-image" id="panel1"></div>
+                                <p>About<p>
+                                <p>dlsndk;js</p>
+                            </li>
                             <li class="" ng-click="goToResumeView()">Resume</li>
                             <li class="" ng-click="goToProjectsView()">Projects</li>
                             <li class="" ng-click="goToBlogView()">Blogs</li>
-                        </ul>-->
-                        <p><a ng-click="close()">Ok, I got it!</a></p>
+                        </ul>
+                        <button ng-click="goToHomeView()">Home</button>
+                        <button ng-click="close()">Close</button>
                     </div> <!-- .modal end -->
                 </div> <!-- .modal-container end -->
             </nav>

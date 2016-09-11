@@ -24,7 +24,15 @@ body {
   -o-overflow-scrolling: touch;
   overflow-scrolling: touch;
 }
+a {
+    cursor: pointer;
+}
+a, li, ul {
+    text-decoration: none;
+    list-style-type: none;
+}
 button {
+  font-family: 'Oswald';
   font-size: 1.25em;
   font-weight: bold;
   text-transform: uppercase;
@@ -32,6 +40,7 @@ button {
   color: #ffffff;
   background-color: #37474f;
   border: 3px solid #f1c311;
+  border-radius: 0.5em;
   display: inline-block;
   padding: 0.75em 1em;
 }

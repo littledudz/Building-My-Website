@@ -1,5 +1,4 @@
 .navbar {
-    z-index: 99;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +10,7 @@
 /* ------------ Navbar Hamburger ------------- */
 
 #hamburger {
-    z-index: 60;
+    z-index: 70;
     position: relative;
     color: #37474f;
     cursor: pointer;
@@ -27,7 +26,7 @@
   -webkit-box-shadow: 0px 0px 6px #000000;
 }
 .top-circles {
-    z-index: 50;
+    z-index: 60;
     position: relative;
     width: 4em;
     height: 4em;
@@ -42,7 +41,7 @@
     z-index: 100;
     position: fixed;
     display: block;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     bottom: 0em;
     left: 0em;
     right: 0em;
@@ -53,9 +52,12 @@
     position: fixed;
     display: block;
     width: 95%;
-    height: 88%;
+    height: 94%;
     background-color: #ffffff;
     border-radius: 6px;
     padding: 20px;
     margin: 2.5%
+}
+.modal-container .modal{
+    cursor: pointer;
 }
