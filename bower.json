@@ -13,6 +13,7 @@
     "angular-resource": "1.5.x",
     "angular-route": "1.5.x",
     "bootstrap": "3.3.x",
+    "font-awesome": "4.3.0",
     "jquery": "2.2.x"
   }
 }
