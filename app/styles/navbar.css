@@ -1,4 +1,5 @@
 .navbar {
+    z-index: 30;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,6 +19,8 @@
     margin-left: 1.05em;
 }
 .hamburger-circle {
+    z-index: 70;
+    position: relative;
     cursor: pointer;
     margin-left: 1em;
     margin-top: -3em;
@@ -47,17 +50,40 @@
     right: 0em;
     top: 0em;
 }
-.modal-container .modal{
+.modal-container .modal {
     z-index: 100;
     position: fixed;
     display: block;
-    width: 95%;
-    height: 94%;
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
-    padding: 20px;
-    margin: 2.5%
 }
-.modal-container .modal{
+.modal-tab-container {
+    padding: 4% 0%;
+    vertical-align: center;
+}
+.modal-tab-container .modal-tab{
+    width: 20em;
+    height: 4em;
+    font-family: 'Oswald';
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.50em;
+    color: #ffffff;
+    background-color: #37474f;
+    border: 3px solid #000000;
+    border-left: none;
+    border-radius: 0em 3em 3em 0em;
+    line-height: 4em;
+    vertical-align: center;
     cursor: pointer;
+    margin: 1em 0em;
+    padding-left: 1em;
+}
+.modal-tab-container .modal-tab:hover{
+    width: 21em;
+    color: #f1c311;
+    letter-spacing: 0.55em;
+    border: 3px solid #f1c311;
+    border-left: none;
+    -webkit-box-shadow: 0px 0px 6px #000000;
 }

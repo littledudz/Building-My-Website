@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="styles/animations.css">
         <link rel="stylesheet" href="styles/navbar.css">
         <link rel="stylesheet" href="styles/home.css">
-        <link rel="stylesheet" href="styles/profile.css">
+        <link rel="stylesheet" href="styles/about.css">
         <link rel="stylesheet" href="styles/resume.css">
         <link rel="stylesheet" href="styles/projects.css">
         <link rel="stylesheet" href="styles/blog.css">
@@ -20,23 +20,20 @@
     <body>
         <div class="website-container">
             <nav ng-controller="NavbarController" class="navbar">
-                <i class="fa fa-bars fa-2x" id="hamburger" ng-click="openModal()"></i>
-                <div class="hamburger-circle top-circles" ng-click="openModal()"></div>
+                <div class="nav-hamgurger-container">
+                    <i class="fa fa-bars fa-2x" id="hamburger" ng-click="openModal()"></i>
+                    <div class="hamburger-circle top-circles" ng-click="openModal()"></div>
+                </div>
                 <div bn-modals ng-show="subview" ng-switch="subview" class="modal-container">
                     <div ng-switch-when="openModal" class="modal">
-                        <p>{{ message }}</p>
-                        <ul class="modal-panel-container">
-                            <li class="modal-panel" id="panel1" ng-click="goToAboutView()">
-                                <div class="modal-panel-image" id="panel1"></div>
-                                <p>About<p>
-                                <p>dlsndk;js</p>
-                            </li>
-                            <li class="" ng-click="goToResumeView()">Resume</li>
-                            <li class="" ng-click="goToProjectsView()">Projects</li>
-                            <li class="" ng-click="goToBlogView()">Blogs</li>
+                        <ul class="modal-tab-container">
+                            <li class="modal-tab" id="tab1" ng-click="goToHomeView(); close()">Home</li>
+                            <li class="modal-tab" id="tab2" ng-click="goToAboutView(); close()">About</li>
+                            <li class="modal-tab" id="tab3" ng-click="goToResumeView(); close()">Resume</li>
+                            <li class="modal-tab" id="tab4" ng-click="goToProjectsView(); close()">Projects</li>
+                            <li class="modal-tab" id="tab5" ng-click="goToBlogView(); close()">Blog</li>
+                            <li class="modal-tab" id="tab6" ng-click="close()">Close</li>
                         </ul>
-                        <button ng-click="goToHomeView()">Home</button>
-                        <button ng-click="close()">Close</button>
                     </div> <!-- .modal end -->
                 </div> <!-- .modal-container end -->
             </nav>

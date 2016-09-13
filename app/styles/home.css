@@ -1,14 +1,14 @@
 /* ------------ Top Circle ------------- */
 
 .top-circle-container{
+  z-index: 1;
+  position: relative;
   display: inline-block;
   font-weight: bold;
   font-family: 'Oswald';
   margin-bottom: -1em;
 }
 .top-circle-container .top-circle {
-  z-index: 75;
-  position: relative;
   display: inline-block;
   width: 23em;
   height: 23em;
@@ -19,8 +19,6 @@
   margin-left: 1em;
 }
 .top-circle-content {
-  z-index: 85;
-  position: relative;
   text-align: center;
   letter-spacing: 0em;
   margin-top: -14em;
@@ -75,8 +73,8 @@
   margin: 0em;
 }
 .carousel-inner .item img, img {
-  max-height: 724px;
-  min-height: 724px;
+  max-height: 941px;
+  min-height: 941px;
   width: 100%;
   height: 100%;
 }
@@ -166,7 +164,6 @@
 /* ------------ Bottom Circles ------------- */
 
 #homeCarousel .carousel-indicators{
-  z-index: 50;
   width: 79.1%;
   text-align: right;
   letter-spacing: -0.25em;
@@ -186,7 +183,6 @@
   margin-right: 9em;
 }
 .bottom-squares-container .qc{
-  z-index: 50;
   width: 75em;
   height: 10em;
   position: absolute;
@@ -196,7 +192,6 @@
   margin-right: 0em;
 }
 .circles {
-  z-index: 50;
   background-color: #ffffff;
   position: relative;
   display: inline-block;

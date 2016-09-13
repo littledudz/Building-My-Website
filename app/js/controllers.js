@@ -2,7 +2,7 @@ angular.module("WebApp")
 
 .controller('NavbarController', ['$scope', '$location', 'modals', function ($scope, $location, modals) {
     $scope.goToHomeView = () => { $location.path('/') };
-    $scope.goToAboutView = () => { $location.path('/profile') };
+    $scope.goToAboutView = () => { $location.path('/about') };
     $scope.goToResumeView = () => { $location.path('/resume') };
     $scope.goToProjectsView = () => { $location.path('/projects') };
     $scope.goToBlogView = () => { $location.path('/blog') };
@@ -31,7 +31,7 @@ angular.module("WebApp")
 
 }])
 
-.controller('ProfileViewController', ['$scope', function ($scope) {
+.controller('AboutViewController', ['$scope', function ($scope) {
     
 }])
 

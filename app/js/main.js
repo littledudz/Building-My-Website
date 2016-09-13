@@ -6,9 +6,9 @@ app.config (['$routeProvider', function ($routeProvider) {
         templateUrl: 'views/home.html',
         controller: 'HomeViewController'
     })
-    .when('/profile', {
-        templateUrl: 'views/profile.html',
-        controller: 'ProfileViewController'
+    .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutViewController'
     })
     .when('/resume', {
         templateUrl: 'views/resume.html',
