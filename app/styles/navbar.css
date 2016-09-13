@@ -28,6 +28,12 @@
 .hamburger-circle:hover {
   -webkit-box-shadow: 0px 0px 6px #000000;
 }
+.side-circle {
+    z-index: 70;
+    position: relative;
+    margin-left: 26em;
+    margin-top: -28em;
+}
 .top-circles {
     z-index: 60;
     position: relative;
@@ -40,22 +46,9 @@
 
 /* ------------ Modal ------------- */
 
-.modal-container {
-    z-index: 100;
-    position: fixed;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.7);
-    bottom: 0em;
-    left: 0em;
-    right: 0em;
-    top: 0em;
-}
 .modal-container .modal {
-    z-index: 100;
-    position: fixed;
     display: block;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 .modal-tab-container {
     padding: 4% 0%;
@@ -77,7 +70,7 @@
     vertical-align: center;
     cursor: pointer;
     margin: 1em 0em;
-    padding-left: 1em;
+    padding-left: 2em;
 }
 .modal-tab-container .modal-tab:hover{
     width: 21em;
@@ -86,4 +79,21 @@
     border: 3px solid #f1c311;
     border-left: none;
     -webkit-box-shadow: 0px 0px 6px #000000;
+}
+@media screen and (max-width:600px) {
+    .modal-tab-container .modal-tab{
+        width: 95%;
+    }
+    .modal-tab-container .modal-tab:hover{
+        width: 96%;
+    }
+}
+@media screen and (max-width:345px) {
+    .modal-tab-container .modal-tab{
+        padding-left: 1em;
+        letter-spacing: 0.2em;
+    }
+    .modal-tab-container .modal-tab:hover{
+        letter-spacing: 0.21em;
+    }
 }

@@ -1,0 +1,68 @@
+.about-page-container {
+
+}
+
+/* ------------ Title ------------- */
+
+.about-page-container .header-container {
+    padding: 3em;
+    text-align: center;
+}
+.header-container .about-title-name {
+    font-size: 4em;
+    font-weight: bold;
+}
+.header-container .about-title-sidenote {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* ------------ Background ------------- */
+
+.about-page-container .personal-info-container {
+    display: block;
+}
+.personal-info-container .background-container {
+    display: block;
+    width: 75%;
+}
+.background-container .about-background {
+    display: block;
+    width: 75%;
+}
+
+/* ------------ Personal Info ------------- */
+
+.personal-info-container .personal-image-and-info {
+
+}
+.personal-image-and-info .about-image-container {
+
+}
+.about-image-container .about-image {
+    background-image: url("../images/profile-picture.jpg")
+}
+.personal-image-and-info .personal-info-bullets-container {
+
+}
+.personal-info-bullets-container .bullet-point {
+
+}
+.bullet-point .bullet-point-titles {
+
+}
+.bullet-point .bullet-point-info {
+
+}
+.personal-info-bullets-container .about-name {
+
+}
+.personal-info-bullets-container .about-buttons {
+    width: 19em;
+}
+.personal-info-bullets-container .about-buttons:hover {
+    width: 19.1em;
+}
+.personal-info-bullets-container .about-name {
+    
+}
