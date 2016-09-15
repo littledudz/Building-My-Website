@@ -4,10 +4,6 @@
         <p class="about-title-sidenote">...or at least a small part</p>
     </div>
     <div class="personal-info-container">
-        <div class="background-container">
-            <p class="about-background">ertert</p>
-            <p class="about-background">uiyuiyuiu</p>
-        </div>
         <div class="personal-image-and-info">
             <div class="about-image-container">
                 <div class="about-image"></div>
@@ -15,40 +11,109 @@
             <div class="personal-info-bullets-container">
                 <div class="bullet-points-container">
                     <div class="bullet-point">
-                        <i class="fa fa-calendar"></i>
-                        <p class="bullet-point-titles">Birthday  :</p>
-                        <p class="bullet-point-info">  03/16/94</p>
+                        <i class="fa fa-calendar fa-lg bullet-icon"></i>
+                        <p class="bullet-point-titles title1">Birthday</p>
+                        <p class="bullet-point-colon colon1">:</p>
+                        <p class="bullet-point-info">03/16/94</p>
                     </div>
                     <div class="bullet-point">
-                        <i class="fa fa-phone"></i>
-                        <p class="bullet-point-titles">Phone  :</p>
-                        <p class="bullet-point-info">  1 (205)873-3273</p>
+                        <i class="fa fa-phone fa-lg bullet-icon"></i>
+                        <p class="bullet-point-titles title2">Phone</p>
+                        <p class="bullet-point-colon colon2">:</p>
+                        <p class="bullet-point-info">1 (205)873-3273</p>
                     </div>
                     <div class="bullet-point">
-                        <i class="fa fa-envelope"></i>
-                        <p class="bullet-point-titles">Email  :</p>
-                        <p class="bullet-point-info">  ddickersoniv@gmail.com</p>
+                        <i class="fa fa-envelope fa-lg bullet-icon"></i>
+                        <p class="bullet-point-titles title3">Email</p>
+                        <p class="bullet-point-colon colon3">:</p>
+                        <p class="bullet-point-info">ddickersoniv@gmail.com</p>
                     </div>
                     <div class="bullet-point">
-                        <i class="fa fa-linkedin"></i>
-                        <p class="bullet-point-titles">LinkedIn  :</p>
-                        <p class="bullet-point-info">  https://www.linkedin.com/in/dudley-dickerson-a6a56a106</p>
+                        <i class="fa fa-linkedin fa-lg bullet-icon"></i>
+                        <p class="bullet-point-titles title4">LinkedIn</p>
+                        <p class="bullet-point-colon colon4">:</p>
+                        <p class="bullet-point-info"><a href="https://www.linkedin.com/in/dudley-dickerson-a6a56a106">Link To My LinkedIn</a></p>
                     </div>
                     <div class="bullet-point">
-                        <i class="fa fa-github"></i>
-                        <p class="bullet-point-titles">Github  :</p>
-                        <p class="bullet-point-info">https://github.com/littledudz</p>
+                        <i class="fa fa-github fa-lg bullet-icon"></i>
+                        <p class="bullet-point-titles title5">Github</p>
+                        <p class="bullet-point-colon colon5">:</p>
+                        <p class="bullet-point-info"><a href="https://github.com/littledudz">Link To My Github</a></p>
                     </div>
                     <div class="bullet-point">
-                        <i class="fa fa-map-marker"></i>
-                        <p class="bullet-point-titles">Address  :</p>
-                        <p class="bullet-point-info">  4626 Battery Lane</p>
+                        <i class="fa fa-map-marker fa-lg bullet-icon"></i>
+                        <p class="bullet-point-titles title6">Address</p>
+                        <p class="bullet-point-colon colon6">:</p>
+                        <p class="bullet-point-info">4626 Battery Lane</p>
                     </div>
                 </div> <!-- end .bullet-points-container -->
                 <p class="about-name">Dudley Dickerson</p>
-                <button class="about-buttons download-resume-button"><i class="fa fa-download"></i>   Download Resume</button>
-                <button class="about-buttons view-resume-button"><i class="fa fa-eye"></i>   View Resume</button>
+                <button class="about-buttons download-resume-button" ng-click=""><i class="fa fa-download"></i>   Download Resume</button>
+                <button class="about-buttons view-resume-button" ng-click="goToResumeView()"><i class="fa fa-eye"></i>   View Resume</button>
             </div> <!-- end .personal-info-bullets-container -->
         </div> <!-- end .personal-image-and-info -->
     </div> <!-- end .personal-info-container -->
+    <div class="background-container">
+        <p class="about-background">ertert</p>
+        <p class="about-background">uiyuiyuiu</p>
+    </div>
+    <div class="interest-container">
+        <h3 class="interests-title">Hobbies & Interests</h3>
+        <div class="interest-list">
+            <div class="col-sm-2 col-xs-6">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="fa fa-gamepad"></i></span>
+                    <span class="item-details">
+                        <span class="item-title">Games</span>
+                        <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                    </span><!-- /.item-details -->
+                </a>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="fa fa-apple"></i></span>
+                    <span class="item-details">
+                        <span class="item-title">Apple</span>
+                        <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                    </span><!-- /.item-details -->
+                </a>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="fa fa-headphones"></i></span>
+                    <span class="item-details">
+                        <span class="item-title">Music</span>
+                        <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                    </span><!-- /.item-details -->
+                </a>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="fa fa-coffee"></i></span>
+                    <span class="item-details">
+                        <span class="item-title">Coffee</span>
+                        <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                    </span><!-- /.item-details -->
+                </a>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="fa fa-film"></i></span>
+                    <span class="item-details">
+                        <span class="item-title">Movies</span>
+                        <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                    </span><!-- /.item-details -->
+                </a>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="fa fa-plane"></i></span>
+                    <span class="item-details">
+                        <span class="item-title">Travel</span>
+                        <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                    </span><!-- /.item-details -->
+                </a>
+            </div>
+        </div><!-- /.interest-list -->
+    </div><!-- /.bottom-padding -->
 </div> <!-- end about-page-container -->

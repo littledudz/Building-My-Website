@@ -28,11 +28,11 @@ angular.module("WebApp")
 }])
 
 .controller('HomeViewController', ['$scope' ,'$location', function ($scope, $location) {
-
+    $scope.goToAboutView = () => { $location.path('/about') };
 }])
 
-.controller('AboutViewController', ['$scope', function ($scope) {
-    
+.controller('AboutViewController', ['$scope', '$location', function ($scope, $location) {
+    $scope.goToResumeView = () => { $location.path('/resume') };
 }])
 
 .controller('ResumeViewController', ['$scope', function ($scope) {

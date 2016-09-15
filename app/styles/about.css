@@ -1,5 +1,4 @@
 .about-page-container {
-
 }
 
 /* ------------ Title ------------- */
@@ -17,12 +16,105 @@
     font-weight: bold;
 }
 
-/* ------------ Background ------------- */
-
+/* ------------ Personal Info ------------- */
 .about-page-container .personal-info-container {
     display: block;
 }
+.personal-image-and-info .about-image-container {
+    width: 50%;
+    float: left;
+}
+.about-image-container .about-image {
+    background-image: url("../images/profile-picture.jpg");
+    width: 25em;
+    height: 25em;
+    margin-left: 25%;
+}
+.personal-image-and-info .personal-info-bullets-container {
+    width: 50%;
+    float: right;
+}
+.personal-info-bullets-container .bullet-points-container {
+    padding-left: 2em;
+}
+.personal-info-bullets-container .bullet-point {
+    display: block;
+    padding-top: 0.5em;
+}
+.bullet-point .bullet-icon, .bullet-point-titles, .bullet-point-colon {
+    display: inline-block;
+    font-weight: bold;
+}
+.bullet-point .title1 {
+    padding-left: 10px;
+}
+.bullet-point .title2 {
+    padding-left: 13px;
+}
+.bullet-point .title3 {
+    padding-left: 10px;
+}
+.bullet-point .title4 {
+    padding-left: 13px;
+}
+.bullet-point .title5 {
+    padding-left: 12px;
+}
+.bullet-point .title6 {
+    padding-left: 18px;
+}
+.bullet-point .colon1 { 
+    padding-left: 14px;
+    padding-right: 10px;
+}
+.bullet-point .colon2 { 
+    padding-left: 38px;
+    padding-right: 10px;
+}
+.bullet-point .colon3 { 
+    padding-left: 44px;
+    padding-right: 10px;
+}
+.bullet-point .colon4 { 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bullet-point .colon5 { 
+    padding-left: 31px;
+    padding-right: 10px;
+}
+.bullet-point .colon6 { 
+    padding-left: 17px;
+    padding-right: 10px;
+}
+.bullet-point .bullet-point-info {
+    z-index: 99;
+    position: relative;
+    display: inline-block;
+}
+.bullet-point a {
+    color: #000000;
+    cursor: pointer;
+}
+.personal-info-bullets-container .about-name {
+    font-size: 2.5em;
+    padding: 0.5em 0em 0.5em 0.5em;
+}
+.personal-info-bullets-container .about-buttons {
+    z-index: 1;
+    position: relative;
+    display: block;
+    width: 19em;
+    margin: 0.5em 0em 0.5em 1em;
+}
+.personal-info-bullets-container .about-buttons:hover {
+    width: 19.1em;
+}
+
+/* ------------ Background ------------- */
+
 .personal-info-container .background-container {
+    clear: both;
     display: block;
     width: 75%;
 }
@@ -31,38 +123,109 @@
     width: 75%;
 }
 
-/* ------------ Personal Info ------------- */
+/* ------------ Hobbies & Interests ------------- */
 
-.personal-info-container .personal-image-and-info {
+.interest-list .col-sm-2.col-xs-6 {
+  padding: 0 5px;
+}
+.interest-list .item {
+  background: #e8eaf6;
+  color: #7e878f;
+  display: inline-block;
+  height: 160px;
+  width: 100%;
+  margin: 0 5px 15px;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+}
+.interest-list .item-icon {
+  color: #7e878f;
+  display: block;
+  font-size: 45px;
+  padding: 30px 0 10px 0;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.interest-list .item-title {
+  color: #7e878f;
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 12px;
+  text-transform: uppercase;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.interest-list .item:hover {
+  background: #7e878f;
+  z-index: 1;
+}
+.interest-list .item:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -65px;
+  height: 125%;
+  width: 180%;
+  background: #7e878f;
+  opacity: 0;
+  z-index: -1;
 
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
-.personal-image-and-info .about-image-container {
-
+.interest-list .item:hover:before {
+  opacity: 1;
+} 
+.interest-list .item:hover .item-icon {
+  color: #ffffff;
+  font-size: 125px;
+  padding: 0;
+  opacity: 0.25;
 }
-.about-image-container .about-image {
-    background-image: url("../images/profile-picture.jpg")
+.interest-list .item-details {
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
-.personal-image-and-info .personal-info-bullets-container {
-
+.interest-list .item:hover .item-details {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  text-align: left;
+  z-index: 2;
+  height: 170px;
+  width: 230px;
 }
-.personal-info-bullets-container .bullet-point {
-
+.interest-list .item:hover .item-title,
+.interest-list .item:hover .item-description {
+  color: #ffffff;
+  display: block;
+  z-index: 2;
 }
-.bullet-point .bullet-point-titles {
-
+.interest-list .item-description {
+  display: none;
+  font-size: 16px;
+  margin-top: -15px;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
-.bullet-point .bullet-point-info {
-
-}
-.personal-info-bullets-container .about-name {
-
-}
-.personal-info-bullets-container .about-buttons {
-    width: 19em;
-}
-.personal-info-bullets-container .about-buttons:hover {
-    width: 19.1em;
-}
-.personal-info-bullets-container .about-name {
-    
+.client-testimonial {
+  border: 2px solid #e8eaf6;
+  margin-top: 10px;
+  position: relative;
 }

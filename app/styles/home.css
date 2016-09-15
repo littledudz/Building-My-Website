@@ -132,6 +132,8 @@
   margin-right: 12em;
 }
 .social-media-container a {
+  z-index: 60;
+  position: relative;
   width: 2em;
   height: 2em;
   font-size: 1.5em;
