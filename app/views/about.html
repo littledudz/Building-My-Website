@@ -7,6 +7,7 @@
         <div class="personal-image-and-info">
             <div class="about-image-container">
                 <div class="about-image"></div>
+                <!--<img src="../images/profile-picture.jpg" alt="" class="about-image">-->
             </div>
             <div class="personal-info-bullets-container">
                 <div class="bullet-points-container">
@@ -46,74 +47,81 @@
                         <p class="bullet-point-colon colon6">:</p>
                         <p class="bullet-point-info">4626 Battery Lane</p>
                     </div>
+                    <p class="bullet-point-city">Birmingham, Al 35213</p>
                 </div> <!-- end .bullet-points-container -->
                 <p class="about-name">Dudley Dickerson</p>
-                <button class="about-buttons download-resume-button" ng-click=""><i class="fa fa-download"></i>   Download Resume</button>
-                <button class="about-buttons view-resume-button" ng-click="goToResumeView()"><i class="fa fa-eye"></i>   View Resume</button>
+                <a href="../files" download="resume.pdf"><button class="about-buttons download-resume-button" ng-click=""><i class="fa fa-download"></i>   Download Resume</button></a>
+                <button class="about-buttons view-resume-button" ng-click="goToResumeView()"><i class="fa fa-eye"></i>  View Resume</button>
             </div> <!-- end .personal-info-bullets-container -->
         </div> <!-- end .personal-image-and-info -->
     </div> <!-- end .personal-info-container -->
-    <div class="background-container">
-        <p class="about-background">ertert</p>
-        <p class="about-background">uiyuiyuiu</p>
-    </div>
-    <div class="interest-container">
-        <h3 class="interests-title">Hobbies & Interests</h3>
-        <div class="interest-list">
-            <div class="col-sm-2 col-xs-6">
-                <a href="#" class="item">
-                    <span class="item-icon"><i class="fa fa-gamepad"></i></span>
-                    <span class="item-details">
-                        <span class="item-title">Games</span>
-                        <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
-                    </span><!-- /.item-details -->
-                </a>
-            </div>
-            <div class="col-sm-2 col-xs-6">
-                <a href="#" class="item">
-                    <span class="item-icon"><i class="fa fa-apple"></i></span>
-                    <span class="item-details">
-                        <span class="item-title">Apple</span>
-                        <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
-                    </span><!-- /.item-details -->
-                </a>
-            </div>
-            <div class="col-sm-2 col-xs-6">
-                <a href="#" class="item">
-                    <span class="item-icon"><i class="fa fa-headphones"></i></span>
-                    <span class="item-details">
-                        <span class="item-title">Music</span>
-                        <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
-                    </span><!-- /.item-details -->
-                </a>
-            </div>
-            <div class="col-sm-2 col-xs-6">
-                <a href="#" class="item">
-                    <span class="item-icon"><i class="fa fa-coffee"></i></span>
-                    <span class="item-details">
-                        <span class="item-title">Coffee</span>
-                        <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
-                    </span><!-- /.item-details -->
-                </a>
-            </div>
-            <div class="col-sm-2 col-xs-6">
-                <a href="#" class="item">
-                    <span class="item-icon"><i class="fa fa-film"></i></span>
-                    <span class="item-details">
-                        <span class="item-title">Movies</span>
-                        <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
-                    </span><!-- /.item-details -->
-                </a>
-            </div>
-            <div class="col-sm-2 col-xs-6">
-                <a href="#" class="item">
-                    <span class="item-icon"><i class="fa fa-plane"></i></span>
-                    <span class="item-details">
-                        <span class="item-title">Travel</span>
-                        <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
-                    </span><!-- /.item-details -->
-                </a>
-            </div>
-        </div><!-- /.interest-list -->
-    </div><!-- /.bottom-padding -->
+    <div class="interest-and-background-container">
+        <div class="background-container">
+            <p class="about-background">Hello! I am Dudley Dickerson, and it is a pleasure to meet you! Just to let you know a little bit about myself, I am a front-end web developer who is always looking for a way to further my education. I started of my coding career as just an enthusiastic college grad looking to get into the software side of technology, and so, I decided to begin by going to Depot U, a coding boot-camp in downtown Birmingham. Ever since then, I have been pursuing my passion for technology by developing new skills in many different facits of the realm.</p>
+            <!--<p class="about-background">uiyuiyuiu</p>-->
+        </div>
+        <div class="interest-container">
+            <h3 class="interest-title">Hobbies & Interests</h3>
+            <div class="interest-list">
+                <div class="interest-line1">
+                    <div class="item-container">
+                        <a href="#" class="item">
+                            <span class="item-icon"><i class="fa fa-gamepad"></i></span>
+                            <span class="item-details">
+                                <span class="item-title">Games</span>
+                                <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                            </span><!-- /.item-details -->
+                        </a> <!-- .item -->
+                    </div> <!-- end .item-container -->
+                    <div class="item-container">
+                        <a href="#" class="item">
+                            <span class="item-icon"><i class="fa fa-apple"></i></span>
+                            <span class="item-details">
+                                <span class="item-title">Apple</span>
+                                <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                            </span><!-- /.item-details -->
+                        </a> <!-- .item -->
+                    </div> <!-- end .item-container -->
+                    <div class="item-container">
+                        <a href="#" class="item">
+                            <span class="item-icon"><i class="fa fa-headphones"></i></span>
+                            <span class="item-details">
+                                <span class="item-title">Music</span>
+                                <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                            </span><!-- /.item-details -->
+                        </a> <!-- .item -->
+                    </div> <!-- end .item-container -->
+                </div> <!-- end .interest-line1 -->
+                <div class="interest-line2">
+                    <div class="item-container">
+                        <a href="#" class="item">
+                            <span class="item-icon"><i class="fa fa-coffee"></i></span>
+                            <span class="item-details">
+                                <span class="item-title">Coffee</span>
+                                <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                            </span><!-- /.item-details -->
+                        </a> <!-- .item -->
+                    </div> <!-- end .item-container -->
+                    <div class="item-container">
+                        <a href="#" class="item">
+                            <span class="item-icon"><i class="fa fa-film"></i></span>
+                            <span class="item-details">
+                                <span class="item-title">Movies</span>
+                                <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                            </span><!-- /.item-details -->
+                        </a> <!-- .item -->
+                    </div> <!-- end .item-container -->
+                    <div class="item-container">
+                        <a href="#" class="item">
+                            <span class="item-icon"><i class="fa fa-plane"></i></span>
+                            <span class="item-details">
+                                <span class="item-title">Travel</span>
+                                <span class="item-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                            </span><!-- end .item-details -->
+                        </a> <!-- end .item -->
+                    </div> <!-- end .item-container -->
+                </div> <!-- end .interests-line2 -->
+            </div> <!-- end .interest-list -->
+        </div> <!-- end .interest-container -->
+    </div> <!-- end .interest-and-background-container -->
 </div> <!-- end about-page-container -->

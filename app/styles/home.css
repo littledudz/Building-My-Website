@@ -74,7 +74,7 @@
 }
 .carousel-inner .item img, img {
   max-height: 941px;
-  min-height: 941px;
+  min-height: 727px;
   width: 100%;
   height: 100%;
 }
@@ -126,7 +126,7 @@
   text-align: right;
   position: relative;
   float: right;
-  margin-top: -41em;
+  margin-top: -32em;
 }
 .social-media-container {
   margin-right: 12em;
