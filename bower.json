@@ -1,9 +1,8 @@
 {
-  "name": "angular-phonecat",
-  "description": "A starter project for AngularJS",
+  "name": "dudley-website",
+  "description": "A beginning website to show who I am and what I have done",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-phonecat",
-  "license": "MIT",
+  "license": "",
   "private": true,
   "dependencies": {
     "angular": "1.5.x",

@@ -1,9 +1,9 @@
 {
   "name": "dudley-website",
-  "private": true,
-  "version": "0.0.0",
   "description": "A beginning website to show who I am and what I have done",
-  "license": "MIT",
+  "version": "0.0.0",
+  "license": "",
+  "private": true,
   "devDependencies": {
     "bower": "^1.7.7",
     "http-server": "^0.9.0",
